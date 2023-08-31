@@ -1,6 +1,5 @@
 #reilley-locke.github.io
 
-<!--
 
 Hey there, I'm Reilley! This repo is currently for my Web class in the ATLAS program at CU Boulder.
 
@@ -9,4 +8,3 @@ Hey there, I'm Reilley! This repo is currently for my Web class in the ATLAS pro
 - How to reach me: Email (reilley.locke@colorado.edu)
 - Pronouns: She/her, but using They/them is okay too
 - Fun fact: When I'm not working on school, I enjoy weaving :]
--->

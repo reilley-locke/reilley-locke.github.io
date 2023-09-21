@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--Error (missing !DOCTYPE)-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4</title>
+    <style>
+        img{
+            width:200px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="/html-midterm/page1.html">Page 1</a>
+        <span> | </span>
+        <a href="/html-midterm/page2.html">Page 2</a>
+        <span> | </span>
+        <a href="/html-midterm/page3.html">Page 3</a>
+        <span> | </span>
+        <a href="/html-midterm/page4.html">Page 4</a>
+        <span> | </span>
+        <a href="/html-midterm/page5.html">Page 5</a>
+        <span> | </span>
+    </div>
+    
+    <!--The images didn't line up with the labels. So, I put the labels in the same rows-->
+    <!--Furthermore, all of these images needed alts, so I added those-->
+    <table>
+        <tr>
+            <th>Dogs</th>
+            <td><img src="img/dogsFrolic.png" alt="Dogs running in a flower field"></td>
+            <td><img src="img/dogSinging.png" alt="A dog singing on a stage"></td> <!--Error (missing closing tag for td)-->
+            <td><img src="img/labLab.png" alt="A dog with some lab equipment"></td>
+        </tr>
+        <tr>
+            <th>Cats</th>
+            <td><img src="img/boxingCats.png" alt="Two cats in a boxing ring"></td>
+            <td><img src="img/orangeCat.png" alt="An orange cat playing with a ball"></td> <!--Error (missing <td> tags around image)-->
+            <td><img src="img/sunCat.png" alt="A tabby laying in the sun on a chair"></td>
+        </tr>
+        <tr>
+            <th>Other?</th>
+            <td><img src="img/diamondAlien.png" alt="Aliens partying with large green diamonds"></td>
+            <td><img src="img/creature.png" alt="A precambrian looking creature"></td> <!--Error (missing opening tag for td)-->
+            <td><img src="img/aliensPeace.png" alt="Two aliens waving hello on an orange background"></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

@@ -63,7 +63,7 @@ footer {
     padding: 10px;
     background-color: #007bff;
     color: #fff;
-    /*position: absolute; Error - causes footer to be placed in email field for some reason?*/
+    position: absolute;
     bottom: 0;
     width: 100%;
 }

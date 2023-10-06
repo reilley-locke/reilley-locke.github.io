@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/../img/wa/wa6/floppa.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    outline: 1em solid black;
+}
+
+/*
+.main img{
+    max-width: 100%;
+}
+*/
+
+.overlayA {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.box1A {
+    position: inherit;
+    width: 25vw;
+    height: 10vh;
+    background-color: red;
+    border-radius: 2em;
+}
+
+.box1A p {
+    /*Yoinked from W3C schools*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+.box2A {
+    position: inherit;
+    top: 50px;
+    width: 150px;
+    height: 50px;
+}
+
+.overlayB {
+    float: right;
+    width: 300px;
+    padding: 10px;
+}
+
+.box1B, .box2B{
+    width: 30em;
+    right: 25px;
+    height: 5em;
+}
+
+.box1B {
+    position: absolute;
+    background-color: yellow;
+    border: 0.25em solid black;
+}
+.box1B p {
+    /*Yoinked from W3C schools*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-size: 25px;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.box2B {
+    position: absolute;
+    top: 7em;
+    background-color: white;
+    border: 0.25em solid black;
+}

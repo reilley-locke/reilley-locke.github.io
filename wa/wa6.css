@@ -12,26 +12,24 @@
     outline: 1em solid black;
 }
 
-/*
-.main img{
-    max-width: 100%;
-}
-*/
 
 .overlayA {
     position: absolute;
-    top: 25px;
+    top: 50vh;
     left: 25px;
 }
 
-.box1A {
-    position: inherit;
-    width: 25vw;
-    height: 10vh;
-    background-color: red;
-    border-radius: 2em;
+.box1A, .box2A, .box3A, .box4A{
+    margin: 50px 0px 50px 0px;
 }
 
+.box1A {
+    position: absolute;
+    width: 25em;
+    height: 6em;
+    background-color:#0099ff;
+    border-radius: 2em;
+}
 .box1A p {
     /*Yoinked from W3C schools*/
     margin: 0;
@@ -42,15 +40,45 @@
     transform: translate(-50%, -50%);
 
     font-family: fantasy;
-    font-size: 40px;
+    font-size: 30px;
+    color:white;
 }
 
-.box2A {
-    position: inherit;
-    top: 50px;
-    width: 150px;
-    height: 50px;
+.box2A, .box3A, .box4A {
+    padding: 0.75em;
+    position: absolute;
+    width: 23em;
+    height: 75px;
+    background-color: rgb(255,255,255,.75);
 }
+.box2A{
+    top: 7em;
+}
+.box3A{
+    top: 14em;
+}
+.box3A p, .box4A p{
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box4A{
+    top: 21em;
+}
+#rating{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    right: 0%;
+    max-width: 50%;
+}
+#thumbsup{
+    position: absolute;
+    float:left;
+    max-width: 27%;
+}
+
 
 .overlayB {
     float: right;
@@ -61,13 +89,12 @@
 .box1B, .box2B{
     width: 30em;
     right: 25px;
-    height: 5em;
 }
-
 .box1B {
     position: absolute;
     background-color: yellow;
     border: 0.25em solid black;
+    height: 5em;
 }
 .box1B p {
     /*Yoinked from W3C schools*/
@@ -82,10 +109,79 @@
     font-weight: 800;
     font-family: cursive;
 }
+#star1 {
+    position: absolute;
+    max-width: 15%;
+    height: 5em;
+}
+#star2 {
+    position: absolute;
+    max-width: 15%;
+    width: 30em;
+    right: 10px;
+    height: 5em;
+}
 
 .box2B {
     position: absolute;
     top: 7em;
-    background-color: white;
+    background-color: rgb(255,255,255,.75);
     border: 0.25em solid black;
+    border-radius: 1em;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgb(126, 126, 126));
+    height: 75vh;
+}
+.box2B h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: monospace;
+}
+
+.box2B p {
+    line-height: 1.5em;
+    padding: 1em;
+}
+.box2B ul{
+    padding-left: 2em;
+    line-height: 1.5em;
+}
+.box2B button{
+    /*Yoinked from W3C schools*/
+    margin: 10em 0em 0em 0em;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+
+    width: 75%;
+    height: 15%;
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 200%;
+}
+button:hover{
+    animation: colorRotate .5s linear 0s infinite;
+}
+
+/* modified from https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css */
+@keyframes colorRotate {
+  from {
+    background-color: #6666ff;
+  }
+  10% {
+    background-color: #0099ff;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: #ff3399;
+  }
+  100% {
+    background-color: #6666ff;
+  }
 }

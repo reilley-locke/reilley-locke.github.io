@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-family: 'Teko', sans-serif;
+    font-size: fit-content;
+
+    transition: background-color;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+nav a:hover{
+    background-color:rgb(158, 68, 255)
+}
+
+
+img{
+    max-width: 100%;
+}
+
+#red-ball{
+    background-color: crimson;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+
+    animation: 5s infinite alternate box2move;
+}
+@keyframes box2move{
+    from {
+        left: 0vw;
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: rgb(255, 242, 0);
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: blue;
+    }
+    to {
+        left: 98.5%;
+        background-color: purple;
+    }
+}

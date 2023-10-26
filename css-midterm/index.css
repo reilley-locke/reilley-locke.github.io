@@ -1,0 +1,209 @@
+@media (min-width: 500px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10px;
+        background-color: wheat;
+    }
+
+    .popup-content h1,
+    h2,
+    h3,
+    .button,
+    header h1,
+    .content,
+    .intro h1 {
+        font-family: portofino, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 100vw;
+        height: fit-content;
+        padding: 1em;
+        position: sticky;
+        top: 0;
+    }
+
+    header h1 {
+        font-size: 40px;
+        order: 2;
+    }
+
+    header img {
+        order: 1;
+        max-width: 3vw;
+    }
+
+    .intro {
+        background-color: rgb(231, 180, 94);
+        width: 100vw;
+        height: fit-content;
+        padding: 1em;
+    }
+
+    .intro p {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        word-spacing: 1.25px;
+        margin: 1vw 5vw 2.5vw 5vw;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content h1 {
+        font-size: 48px;
+        -webkit-text-stroke: 0.025em;
+        -webkit-text-stroke-color: white;
+        padding: 1em;
+    }
+
+    #row1,
+    #row2,
+    #row3,
+    #row4,
+    #row5,
+    #row6,
+    #row7,
+    #row8,
+    #row9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        height: 50em;
+
+
+    }
+
+    #row1 {
+        background-image: url(img/seasons.jpeg);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #row2 {
+        background-image: url(img/symphony1.png);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+
+    }
+
+    .button {
+        width: fit-content;
+        height: fit-content;
+        background-color: darkcyan;
+        font-size: 24px;
+        color: white;
+        padding: 10px 20px;
+        margin: 2em;
+        border: none;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    .popup-close a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .popup-close a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .popup {
+        display: flex;
+        flex-direction: column;
+        /*position: absolute;*/
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: all 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .popup-content {
+        position: absolute;
+        height: 25vw;
+        padding: 2em 2.5em 0.5em 2.5em;
+        background-color: white;
+        margin: 15vw;
+        overflow-y: scroll;
+    }
+
+    .popup-content h1 {
+        font-size: 60px;
+    }
+
+    .popup-content h2 {
+        font-size: 36px;
+    }
+
+    .popup-content h3 {
+        font-size: 28px;
+    }
+
+    .popup-content h4 {
+        font-size: 20px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .popup-content p {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        word-spacing: 1.25px;
+    }
+
+    .popup:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        order: 2;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        color: black;
+    }
+}
+
+@media (max-width: 400px) {}

@@ -1,3 +1,4 @@
+/* Default styling */
 html,
 body {
     margin: 0;
@@ -5,12 +6,12 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-
 html {
     font-size: 10px;
     background-color: wheat;
 }
 
+/* Sets custom font (Portofino from Adobe) for respective elements */
 .popup-content h1,
 h2,
 h3,
@@ -25,6 +26,7 @@ header h1,
     text-align: center;
 }
 
+/* Header styling */
 header {
     display: flex;
     flex-direction: column;
@@ -37,28 +39,25 @@ header {
     top: 0;
     z-index: 100;
 }
-
 header h1 {
     font-size: 40px;
     order: 2;
 }
-
 header img {
     order: 1;
     max-width: 5vw;
 }
 
+/* Intro styling */
 .intro {
     background-color: rgb(231, 180, 94);
     width: 100vw;
     height: fit-content;
     padding: 1vw;
 }
-
 .intro h1 {
     margin: 1em 2em 1em 2em;
 }
-
 .intro p {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -66,20 +65,18 @@ header img {
     margin: 1vw 5vw 2.5vw 5vw;
 }
 
-
+/* Content (part with the concerts) styling */
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .content h1 {
     font-size: 48px;
     -webkit-text-stroke: 0.025em;
     -webkit-text-stroke-color: white;
     padding: 1vw;
 }
-
 #row1,
 #row2,
 #row3,
@@ -97,76 +94,61 @@ header img {
     width: 100vw;
     height: 50vw;
     margin: 0.5em 0em 0.5em 0em;
-
-
 }
 
-#row1 {
+/* Styling for each concert's row (used IDs because each has a different background image,
+    which might need to be moved to fit better */
+/* Certain properties I discovered through W3C, like background-size and background-position */
+#row1 { /* Vivladi */
     background-image: url(img/seasons.jpeg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
-#row2 {
+#row2 { /* Beethoven3 */
     background-image: url(img/symphony1.png);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-
-#row3 {
+#row3 { /* Tchaikovsky */
     background-image: url(img/piano.jpeg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#row4 {
+#row4 { /* Ravel */
     background-image: url(img/chorus.jpg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#row5 {
+#row5 { /* Beethoven8 */
     background-image: url(img/horns.jpeg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#row6 {
+#row6 { /* BeethovenEmperor */
     background-image: url(img/hall.jpeg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#row7 {
+#row7 { /* Bartók */
     background-image: url(img/guitar.jpeg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#row8 {
+#row8 { /* Brahms */
     background-image: url(img/requiem\ \(2\).jpeg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
-#row9 {
+#row9 { /* BeethovenViolin */
     background-image: url(img/violins.jpeg);
-    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* Button styling */
 .button {
     width: fit-content;
     height: fit-content;
@@ -178,25 +160,23 @@ header img {
     border: none;
     cursor: pointer;
 }
-
+/* Link (href/anchor) styling for button */
 a {
     text-decoration: none;
     color: white;
 }
 
-a:visited {
+a:visited { /* Psuedoclass found and modified from W3C */
     color: white;
     text-decoration: none;
 }
 
-
+/* Modal (popup) styling */
 .popup {
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* align-items: center; */
     justify-content: center;
-    /* align-content: flex-start; */
     top: 0;
     bottom: 0;
     left: 0;
@@ -204,25 +184,12 @@ a:visited {
     height: 100vh;
     width: 100vw;
 
-    transition: all 0.5s;
+    transition: all 0.5s; /* Appearance transition */
     visibility: hidden;
     opacity: 0;
     background-color: rgba(0, 0, 0, .25);
 }
-
-/* .popup-background {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height:100vh;
-
-        background-color: rgba(0, 0, 0, .25);
-        transition: all 0.5s;
-        visibility: hidden;
-        opacity: 0;
-    } */
-
+/* Content in popup styling */
 .popup-content {
     transform: translateY(7.5em);
     position: absolute;
@@ -233,66 +200,56 @@ a:visited {
     margin: 15vw;
     overflow-y: scroll;
 }
-
 .popup-content h1 {
     font-size: 60px;
 }
-
 .popup-content h2 {
     font-size: 36px;
 }
-
 .popup-content h3 {
     font-size: 28px;
 }
-
 .popup-content h4 {
     font-size: 20px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .popup-content p {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.25em;
     text-align: left;
 }
-
+/* Set the popup as the target when clicking the button to enable transition */
+/* Changes popup to be visible (transition) */
 .popup:target {
-    visibility: visible;
+    visibility: visible; 
     opacity: 1;
 }
-
+/* Close button styling */
 .popup-close {
     display: flex;
     justify-content: flex-end;
     position: sticky;
-    /* top: 0px;
-        right: 10px; */
     order: 2;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
     color: black;
 }
-
+/* Link (href/anchor) styling for close button */
 .popup-close a {
     color: black;
     text-decoration: none;
 }
-
-.popup-close a:visited {
+.popup-close a:visited { /* Psuedoclass found and modified from W3C */
     color: black;
     text-decoration: none;
 }
 
-
+/* Query for screens less than 768 pixels (biggest size for a mobile device, including tablets) */
 @media (max-width: 768px) {
-    body {
-        position: absolute;
-    }
-
+    /* Header styling */
     header {
         display: flex;
         flex-direction: column;
@@ -305,47 +262,42 @@ a:visited {
         top: 0;
         z-index: 100;
     }
-
     header h1 {
         font-size: 7.5vw;
         order: 2;
     }
-
     header img {
-        order: 1;
         max-width: 10vw;
     }
 
+    /* Intro styling */
     .intro {
         width: auto;
     }
-
     .intro h1 {
-        font-size: 20px;
+        font-size: 4.5vw;
         margin: 0.5em;
     }
-
     .intro p {
-        font-size: 15px;
+        font-size: 4vw;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         word-spacing: 1.25px;
         margin: 1vw 5vw 2.5vw 5vw;
     }
 
+    /* Content (part with the concerts) styling */
     .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: flex-start;
     }
-
     .content h1 {
-        font-size: 5vw;
+        font-size: 5.5vw;
         -webkit-text-stroke: 0.025em;
         -webkit-text-stroke-color: white;
         padding: 1vw;
     }
-
     #row1,
     #row2,
     #row3,
@@ -361,12 +313,12 @@ a:visited {
         align-content: flex-end;
         align-items: center;
         width: 100vw;
-        /* height: 18.5em; */
-        height: 30vw;
-        background-clip: content-box;
+        height: 35vw;
+        background-clip: content-box; /* Found from W3C */
         margin: 0.5em;
     }
 
+    /* Button styling */
     .button {
         width: fit-content;
         height: fit-content;
@@ -379,51 +331,31 @@ a:visited {
         cursor: pointer;
     }
 
-    .content {
-        display: flex;
-        align-items: center;
-        align-content: flex-start;
-    }
-
+    /* Modal (popup) styling */
     .popup {
-        transform: translateY(-8em);
         position: relative;
-        /* transform: scaleY(0);
-        transition: all 1s, opacity 1s; */
-        transition: all 1s, opacity 1s;
+        transition: all 1s, opacity 1s; /* Appearance transition */
         background-color: transparent;
         height: 0px;
         overflow: hidden;
 
     }
-
+    /* Content in popup styling */
     .popup-content {
-        margin: 0;
+        transform:translateY(-3vw);
         position: absolute;
         top: 0;
         align-self: center;
-        /* position: absolute; */
         width: 100vw;
         height: fit-content;
-        /* transition: height 1s, opacity 0s; */
-        /* visibility: visible;
-        opacity: 100; */
-        overflow-y: scroll;
-
+        overflow-y: scroll; /* Found and modified from W3C */
+        margin: 0;
+        border-width: 0;
+        padding: 0;
     }
-
-    .popup-content p {
-        line-height: 1.5em;
+    .popup-content h1,.popup-content h2 {
+        margin:1vw;
     }
-
-    .popup:target {
-        opacity: 100;
-        /* height:1300; */
-        overflow: visible
-            /* transform: scaleY(1); */
-    }
-
-
     .popup-content h1 {
         font-size: 28px;
         font-weight: bold;
@@ -437,35 +369,35 @@ a:visited {
         font-size: 20px;
         font-weight: bolder;
     }
-
     .popup-content h4 {
+        padding: 0vw 5vw 0vw 5vw;
         font-size: 16px;
         font-weight: bold;
     }
-
     .popup-content p {
+        margin:1vw;
+        line-height: 1.5em;
         font-size: 15px;
         margin: 1em;
     }
 
-    /* .popup-close {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: flex-end; 
-        vertical-align:text-bottom;
-        /* top: 0px;
-        right: 10px; 
-        order: 2;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 36px;
-        color: black;
-    } */
+    /* Set the popup as the target when clicking the button to enable transition */
+    /* Found and modified from W3C */
+    /* Changes popup to be visible (transition) */
+    .popup:target {
+        opacity: 1;
+        overflow: visible
+    }
 
+    /* Close button styling */
+    .popup-close {
+        padding: 5vw;
+    }
+
+    /* Close button styling, exclusive to mobile/tablet screens */
     .popup-close-mobile {
         position: relative;
         background-color: darkcyan;
-
         font-size: 16px;
         color: white;
         padding: 2vw 3vw;
@@ -473,16 +405,13 @@ a:visited {
         border: none;
         cursor: pointer;
     }
-
+    /* Link (href/anchor) styling for mobile close button */
     .popup-close-mobile a {
         color: black;
         text-decoration: none;
     }
-
     .popup-close-mobile a:visited {
         color: black;
         text-decoration: none;
     }
-
-
 }

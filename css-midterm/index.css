@@ -8,7 +8,7 @@ body {
 }
 html {
     font-size: 10px;
-    background-color: wheat;
+    background-color: rgb(231, 180, 94);
 }
 
 /* Sets custom font (Portofino from Adobe) for respective elements */
@@ -159,6 +159,9 @@ header img {
     margin: 2em;
     border: none;
     cursor: pointer;
+}
+.button:hover {
+    background-color: rgb(7, 78, 78);
 }
 /* Link (href/anchor) styling for button */
 a {

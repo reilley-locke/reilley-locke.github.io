@@ -17,7 +17,8 @@ h3,
 .button,
 header h1,
 .content,
-.intro h1 {
+.intro h1,
+.popup-close-mobile {
     font-family: portofino, sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -44,7 +45,7 @@ header h1 {
 
 header img {
     order: 1;
-    max-width: 3vw;
+    max-width: 5vw;
 }
 
 .intro {
@@ -52,6 +53,10 @@ header img {
     width: 100vw;
     height: fit-content;
     padding: 1vw;
+}
+
+.intro h1 {
+    margin: 1em 2em 1em 2em;
 }
 
 .intro p {
@@ -90,7 +95,10 @@ header img {
     align-content: flex-end;
     align-items: center;
     width: 100vw;
-    height: 50em;
+    height: 50vw;
+    margin: 0.5em 0em 0.5em 0em;
+
+
 }
 
 #row1 {
@@ -98,13 +106,65 @@ header img {
     background-size: 100vw;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 #row2 {
     background-image: url(img/symphony1.png);
     background-size: 100vw;
     background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+#row3 {
+    background-image: url(img/piano.jpeg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#row4 {
+    background-image: url(img/chorus.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#row5 {
+    background-image: url(img/horns.jpeg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#row6 {
+    background-image: url(img/hall.jpeg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#row7 {
+    background-image: url(img/guitar.jpeg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#row8 {
+    background-image: url(img/requiem\ \(2\).jpeg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#row9 {
+    background-image: url(img/violins.jpeg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .button {
@@ -164,6 +224,7 @@ a:visited {
     } */
 
 .popup-content {
+    transform: translateY(7.5em);
     position: absolute;
     height: 50em;
     padding: 2em 2.5em 0.5em 2.5em;
@@ -194,7 +255,8 @@ a:visited {
 .popup-content p {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    word-spacing: 1.25px;
+    line-height: 1.25em;
+    text-align: left;
 }
 
 .popup:target {
@@ -226,7 +288,7 @@ a:visited {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     body {
         position: absolute;
     }
@@ -236,7 +298,7 @@ a:visited {
         flex-direction: column;
         align-items: center;
         background-color: white;
-        width: 100vw;
+        width: auto;
         height: fit-content;
         padding: 2vw;
         position: sticky;
@@ -245,7 +307,7 @@ a:visited {
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 7.5vw;
         order: 2;
     }
 
@@ -259,7 +321,8 @@ a:visited {
     }
 
     .intro h1 {
-        font-size: 16px;
+        font-size: 20px;
+        margin: 0.5em;
     }
 
     .intro p {
@@ -269,9 +332,15 @@ a:visited {
         margin: 1vw 5vw 2.5vw 5vw;
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+    }
 
     .content h1 {
-        font-size: 24px;
+        font-size: 5vw;
         -webkit-text-stroke: 0.025em;
         -webkit-text-stroke-color: white;
         padding: 1vw;
@@ -292,60 +361,71 @@ a:visited {
         align-content: flex-end;
         align-items: center;
         width: 100vw;
-        height: fit-content;
+        /* height: 18.5em; */
+        height: 30vw;
+        background-clip: content-box;
+        margin: 0.5em;
     }
 
     .button {
         width: fit-content;
         height: fit-content;
         background-color: darkcyan;
-        font-size: 16px;
+        font-size: 5vw;
         color: white;
         padding: 2vw 3vw;
-        margin: 2em;
+        margin: 0em;
         border: none;
         cursor: pointer;
     }
 
-    .content{
+    .content {
         display: flex;
         align-items: center;
         align-content: flex-start;
     }
+
     .popup {
+        transform: translateY(-8em);
         position: relative;
         /* transform: scaleY(0);
         transition: all 1s, opacity 1s; */
-        transition: all 1s, opacity 1s; 
+        transition: all 1s, opacity 1s;
         background-color: transparent;
         height: 0px;
-        overflow:hidden;
+        overflow: hidden;
+
     }
 
     .popup-content {
-        margin:0;
-        position:absolute;
-        top:0;
+        margin: 0;
+        position: absolute;
+        top: 0;
         align-self: center;
         /* position: absolute; */
-        width:100vw;
-        height:fit-content;
+        width: 100vw;
+        height: fit-content;
         /* transition: height 1s, opacity 0s; */
         /* visibility: visible;
         opacity: 100; */
-        overflow-y:scroll;
+        overflow-y: scroll;
+
+    }
+
+    .popup-content p {
+        line-height: 1.5em;
     }
 
     .popup:target {
         opacity: 100;
         /* height:1300; */
-        overflow:visible
-        /* transform: scaleY(1); */
+        overflow: visible
+            /* transform: scaleY(1); */
     }
 
 
     .popup-content h1 {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: bold;
     }
 
@@ -365,20 +445,44 @@ a:visited {
 
     .popup-content p {
         font-size: 15px;
-
+        margin: 1em;
     }
 
-    .popup-close {
-        display: flex;
+    /* .popup-close {
+        /* display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        position: sticky;
+        justify-content: flex-end; 
+        vertical-align:text-bottom;
         /* top: 0px;
-        right: 10px; */
+        right: 10px; 
         order: 2;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 36px;
         color: black;
+    } */
+
+    .popup-close-mobile {
+        position: relative;
+        background-color: darkcyan;
+
+        font-size: 16px;
+        color: white;
+        padding: 2vw 3vw;
+        margin: 1em;
+        border: none;
+        cursor: pointer;
     }
+
+    .popup-close-mobile a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .popup-close-mobile a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+
 }

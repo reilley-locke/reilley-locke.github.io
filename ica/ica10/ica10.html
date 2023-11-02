@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ica10.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Bro he vibin'</h1>
+    <img id="maxwell" src="maxwell.gif" alt="A goofy goober">
+
+    <button>Click to have him dance again</button>
+
+    <script>
+        const maxwell = document.getElementById("maxwell");
+        const text = document.querySelector("h1");
+        const dance = document.querySelector("button");
+
+        maxwell.addEventListener('mouseover', maxwellLooks);
+        dance.addEventListener('click', maxwellDances);
+
+        function maxwellLooks() {
+            document.getElementById("maxwell").src = "maxwell_look.png";
+            text.textContent = `You disturbed him >:(`;
+        }
+
+        function maxwellDances() {
+            document.getElementById("maxwell").src = "maxwell.gif";
+            text.textContent = `Bro he vibin'`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: cadetblue;
+    color: white;
+    width: fit-content;
+    padding: 2em;
+}
+
+img {
+    width: 25vw;
+}

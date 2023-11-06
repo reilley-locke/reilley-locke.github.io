@@ -1,0 +1,74 @@
+body {
+    /* Position body to center of screen */
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    /* Font */
+    font-family: helvetica, sans-serif;
+    /* Background */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: darkgray;
+    padding: 5em;
+    border-radius: 1em;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  div {
+    padding-bottom: 20px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 150px;
+  }
+
+  button {
+    width: fit-content;
+    height: fit-content;
+    background-color: darkcyan;
+    font-size: 24px;
+    color: white;
+    padding: 1vw 2vw;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover{
+    animation: colorRotate .5s linear 0s infinite;
+}
+
+/* modified from https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css */
+@keyframes colorRotate {
+  from {
+    background-color: #6666ff;
+  }
+  10% {
+    background-color: #0099ff;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: #ff3399;
+  }
+  100% {
+    background-color: #6666ff;
+  }
+}
+
+  p {
+    background: white;
+    font-style: italic;
+    padding: 25px;
+    visibility: hidden;
+  }

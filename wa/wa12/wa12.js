@@ -1,0 +1,33 @@
+// const newBtn = document.querySelector('#js-new-quote')   // Both work
+//const newQuote = document.getElementById('js-new-quote')
+const endPoint = 'https://x-colors.yurace.pro/api/random';
+
+// Using separate function
+const newQuote = document.getElementById('js-new-quote').addEventListener('click', getQuote);
+async function getQuote() {     // async runs in parallel to other parts of the JS
+    console.log("Button works :)");
+    document.getElementById('js-answer-text').style.visibility = "hidden";
+    try {   // Code we want to try to run
+        const response = await fetch(endPoint);
+        if (!response.ok) {     // If not status 200 (so 404, 303, etc.)
+            throw Error(response.statusText);   //Catch bad response and throw an error
+        }
+        const json = await response.json();     // If response is good, then get the json data
+        console.log(json['hex']);  // Looks for question keyword; start with just json to see what it'll return
+        displayQuote(json['hex']);
+    }
+    catch(err) {    // Code to run if something goes run
+        console.log(err);
+        alert('Failed to fetch new quote');
+    }
+};
+
+
+function displayQuote(hex) {
+    const questionTxt = document.querySelector('#js-quote-text');
+    questionTxt.textContent = hex;
+    questionTxt.style.color = hex;
+
+}
+
+getQuote();     // Runs the function once when the page loads

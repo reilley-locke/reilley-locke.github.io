@@ -110,7 +110,7 @@ console.log(totalSalary);
 
 
 for (var i = 0; i < employeeArray.length; i++) {
-    if (employeeArray[i].raiseEligible === "true") {
+    if (employeeArray[i].raiseEligible) {
         let currentSalary = employeeArray[i].salary;
         let raise = (employeeArray[i].salary) * .1;
         employeeArray[i].salary = currentSalary + raise;

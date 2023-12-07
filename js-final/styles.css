@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    height: 50em;
+    width: 1em;
+}
+
+#num1, #num2, #num3, #num4, #num5, #num6, #num7, #num8, #num9, #num10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 5em;
+    font-size: 20px;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    height: 50em;
+    width: 90vw;
+}
+
+#bar1 {
+    margin: 0em 0em .5em .5em;
+    background-color: red;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar2 {
+    margin: 0em 0em .5em .5em;
+    background-color: orange;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar3 {
+    margin: 0em 0em .5em .5em;
+    background-color: yellow;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar4 {
+    margin: 0em 0em .5em .5em;
+    background-color: greenyellow;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar5 {
+    margin: 0em 0em .5em .5em;
+    background-color: green;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar6 {
+    margin: 0em 0em .5em .5em;
+    background-color: cyan;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar7 {
+    margin: 0em 0em .5em .5em;
+    background-color: blue;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar8 {
+    margin: 0em 0em .5em .5em;
+    background-color: blueviolet;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar9 {
+    margin: 0em 0em .5em .5em;
+    background-color: magenta;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#bar10 {
+    margin: 0em 0em .5em .5em;
+    background-color: pink;
+    width: 1em;
+    height: 5em;
+    resize: horizontal;
+    overflow: auto;
+}

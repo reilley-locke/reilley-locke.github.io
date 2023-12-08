@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="slidecontainer">
-        <input type="range" min="0" max="9" value="0" class="slider" id="bar1">
-        <p>Value: <span id="num1"></span></p>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="bar1"
+      />
+      <div class="rangefill" id="range1"></div>
     </div>
+    <p>Value: <span class="value" id="num1"></span></p>
     <div class="slidecontainer">
-        <input type="range" min="0" max="9" value="0" class="slider" id="bar2">
-        <p>Value: <span id="num2"></span></p>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="bar2"
+      />
+      <div class="rangefill" id="range2"></div>
     </div>
+    <p>Value: <span class="value" id="num2"></span></p>
     <div class="slidecontainer">
-        <input type="range" min="0" max="9" value="0" class="slider" id="bar3">
-        <p>Value: <span id="num3"></span></p>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="bar3"
+      />
+      <div class="rangefill" id="range2"></div>
     </div>
+    <p>Value: <span class="value" id="num3"></span></p>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -5,33 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="numbers">
-        <div id="num1">1</div>
-        <div id="num2">1</div>
-        <div id="num3">1</div>
-        <div id="num4">1</div>
-        <div id="num5">1</div>
-        <div id="num6">1</div>
-        <div id="num7">1</div>
-        <div id="num8">1</div>
-        <div id="num9">1</div>
-        <div id="num10">1</div>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="9" value="0" class="slider" id="bar1">
+        <p>Value: <span id="num1"></span></p>
     </div>
-    <div class="bars">
-        <div id="bar1"></div>
-        <div id="bar2"></div>
-        <div id="bar3"></div>
-        <div id="bar4"></div>
-        <div id="bar5"></div>
-        <div id="bar6"></div>
-        <div id="bar7"></div>
-        <div id="bar8"></div>
-        <div id="bar9"></div>
-        <div id="bar10"></div>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="9" value="0" class="slider" id="bar2">
+        <p>Value: <span id="num2"></span></p>
+    </div>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="9" value="0" class="slider" id="bar3">
+        <p>Value: <span id="num3"></span></p>
     </div>
 
     <script src="script.js"></script>

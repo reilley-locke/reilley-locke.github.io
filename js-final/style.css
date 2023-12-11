@@ -53,4 +53,7 @@
   height: 25px;
   background: blue;
   width: 10px;
+  transition-property: width;
+    transition-delay: 0.0s;
+    transition-duration: 1s;
 }

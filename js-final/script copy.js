@@ -87,14 +87,12 @@ slider1.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[0].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider2.oninput = function () {
-    value2.innerHTML = Math.floor(this.value /11);
+    value2.innerHTML = Math.floor(this.value / 11);
     range2.style.width = slider2.value + "%";
     slider2.value = Math.floor(parseInt(this.value)/11);
     numbers[1].textContent = this.value;
@@ -112,14 +110,12 @@ slider2.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[1].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider3.oninput = function () {
-    value3.innerHTML = Math.floor(this.value /11);
+    value3.innerHTML = Math.floor(this.value / 11);
     range3.style.width = slider3.value + "%";
     slider3.value = Math.floor(parseInt(this.value)/11);
     numbers[2].textContent = this.value;
@@ -137,14 +133,12 @@ slider3.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[2].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider4.oninput = function () {
-    value4.innerHTML = Math.floor(this.value /11);
+    value4.innerHTML = Math.floor(this.value / 11);
     range4.style.width = slider4.value + "%";
     slider4.value = Math.floor(parseInt(this.value)/11);
     numbers[3].textContent = this.value;
@@ -162,14 +156,12 @@ slider4.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[3].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider5.oninput = function () {
-    value5.innerHTML = Math.floor(this.value /11);
+    value5.innerHTML = Math.floor(this.value / 11);
     range5.style.width = slider5.value + "%";
     slider5.value = Math.floor(parseInt(this.value)/11);
     numbers[4].textContent = this.value;
@@ -187,14 +179,12 @@ slider5.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[4].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider6.oninput = function () {
-    value6.innerHTML = Math.floor(this.value /11);
+    value6.innerHTML = Math.floor(this.value / 11);
     range6.style.width = slider6.value + "%";
     slider6.value = Math.floor(parseInt(this.value)/11);
     numbers[5].textContent = this.value;
@@ -212,14 +202,12 @@ slider6.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[5].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider7.oninput = function () {
-    value7.innerHTML = Math.floor(this.value /11);
+    value7.innerHTML = Math.floor(this.value / 11);
     range7.style.width = slider7.value + "%";
     slider7.value = Math.floor(parseInt(this.value)/11);
     numbers[6].textContent = this.value;
@@ -237,17 +225,16 @@ slider7.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[6].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider8.oninput = function () {
-    value8.innerHTML = Math.floor(this.value /11);
+    value8.innerHTML = Math.floor(this.value / 11);
     range8.style.width = slider8.value + "%";
     slider8.value = Math.floor(parseInt(this.value)/11);
     numbers[7].textContent = this.value;
+
     // Check for if slider value is valid
     // I love parseInt()!11!!!!1!
     for (var i = 0; i < sliders.length; i++) {
@@ -262,14 +249,12 @@ slider8.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[7].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider9.oninput = function () {
-    value9.innerHTML = Math.floor(this.value /11);
+    value9.innerHTML = Math.floor(this.value / 11);
     range9.style.width = slider9.value + "%";
     slider9.value = Math.floor(parseInt(this.value)/11);
     numbers[8].textContent = this.value;
@@ -287,14 +272,12 @@ slider9.oninput = function () {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[8].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
         }
     }
 }
 
 slider10.oninput = function () {
-    value10.innerHTML = Math.floor(this.value /11);
+    value10.innerHTML = Math.floor(this.value / 11);
     range10.style.width = slider10.value + "%";
     slider10.value = Math.floor(parseInt(this.value)/11);
     numbers[9].textContent = this.value;
@@ -308,31 +291,32 @@ slider10.oninput = function () {
         else { // Else, make the randomizer positive
             randomizerNum = Math.round(Math.random() * (3 - 1) + 1);
         }
+
         if (parseInt(sliders[i].value) + parseInt(randomizerNum) <= 9 && parseInt(sliders[i].value) + parseInt(randomizerNum) >= 0 && sliders[i].id != this.id) {
             rangeFills[i].style.width = sliders[i].value * 10 + "%";
             values[i].innerHTML = Math.floor(parseInt(sliders[i].value) + parseInt(randomizerNum) / 10);
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum);
-            numbers[9].textContent = parseInt(values[i].innerHTML);
-            numbers[i].textContent = parseInt(values[i].innerHTML);
+            //numbers[i].textContent = values[i].textContent
+            //numbers[i].innerHTML = Math.floor(parseInt(sliders[i].value));
         }
     }
 }
 
-// function setNumbers() {
-//     // for(let i = 0; i < 10; i++){
-//     //     console.log(values[i].textContent);
-//     // }
+function setNumbers() {
+    // for(let i = 0; i < 10; i++){
+    //     console.log(values[i].textContent);
+    // }
 
-//     for (let n = 0; n < values.length; n++)
-//     {
-//         if (values[n].textContent == null)
-//         {
-//             numbers[n].textContent = 0;
-//         } 
-//         else
-//         {
-//             console.log(n);
-//             numbers[n].textContent = values[n].textContent;
-//         }
-//     }
-// }
+    for (let n = 0; n < values.length; n++)
+    {
+        if (values[n].textContent == null)
+        {
+            numbers[n].textContent = 0;
+        } 
+        else
+        {
+            console.log(n);
+            numbers[n].textContent = values[n].textContent;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 let modal = document.querySelector(".confirm");
 let submitbtn = document.getElementById("submit");
 let closebtn = document.getElementsByClassName("close")[0];
+let finalNum = document.getElementById("finalNum");
 
 // Clear button
 let clearbtn = document.getElementById("clear");
@@ -19,27 +20,27 @@ let phoneNum9 = document.getElementById("phoneNum9");
 let phoneNum10 = document.getElementById("phoneNum10");
 let numbers = [phoneNum1, phoneNum2, phoneNum3, phoneNum4, phoneNum5, phoneNum6, phoneNum7, phoneNum8, phoneNum9, phoneNum10]
 
- // Sliders and their # values
- // #1
- let slider1 = document.getElementById("bar1");
+// Sliders and their # values
+// #1
+let slider1 = document.getElementById("bar1");
 // // #2
- let slider2 = document.getElementById("bar2");
+let slider2 = document.getElementById("bar2");
 // // #3
- let slider3 = document.getElementById("bar3");
+let slider3 = document.getElementById("bar3");
 // // #4
- let slider4 = document.getElementById("bar4");
+let slider4 = document.getElementById("bar4");
 // // #5
- let slider5 = document.getElementById("bar5");
+let slider5 = document.getElementById("bar5");
 // // #6
- let slider6 = document.getElementById("bar6");
+let slider6 = document.getElementById("bar6");
 // // #7
- let slider7 = document.getElementById("bar7");
+let slider7 = document.getElementById("bar7");
 // // #8
- let slider8 = document.getElementById("bar8");
+let slider8 = document.getElementById("bar8");
 // // #9
- let slider9 = document.getElementById("bar9");
+let slider9 = document.getElementById("bar9");
 // // #10
- let slider10 = document.getElementById("bar10");
+let slider10 = document.getElementById("bar10");
 
 // Slider, value, and range arrays for changing all the others when one bar is interacted with
 let sliders = document.querySelectorAll(".slider");
@@ -96,12 +97,11 @@ slider10.oninput = function () {
     update(9);
 }
 
-function update(currentNum)
-{
+function update(currentNum) {
     // (Should) set the current slider's values
-    values[currentNum].textContent = Math.floor(sliders[currentNum].value /11);
+    values[currentNum].textContent = Math.floor(sliders[currentNum].value / 11);
     rangeFills[currentNum].style.width = sliders[currentNum].value + "%";
-    sliders[currentNum].value = Math.floor(parseInt(sliders[currentNum].value)/11);
+    sliders[currentNum].value = Math.floor(parseInt(sliders[currentNum].value) / 11);
     numbers[currentNum].textContent = sliders[currentNum].value;
 
     // Loop to set all other values besides the current slider's
@@ -120,38 +120,50 @@ function update(currentNum)
             sliders[i].value = parseInt(sliders[i].value) + parseInt(randomizerNum); // Set the slider's value to the current value plus the randomized number
             numbers[i].textContent = parseInt(values[i].innerHTML); // Set the phone number's other numbers to the same value as the values below the bars
         }
-        
+        finalize();
     }
 }
 
-submitbtn.onclick = function() {
-  if (numbers[0].textContent != "")
-  {
-    modal.style.display = "block";
-  }
-}
-closebtn.onclick = function() {
-  modal.style.display = "none";
-  for (var i = 0; i < sliders.length; i++)
-  {
-      rangeFills[i].style.width = 0;
-      values[i].textContent = 0;
-      sliders[i].value = 0;
-      numbers[i].textContent = "";
-  }
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function finalize() {
+    finalNum.textContent = "You submitted the number: ";
+    for (var n = 0; n < numbers.length; n++) {
+        if (n == 3 || n == 6) {
+            finalNum.textContent += "-";
+            finalNum.textContent += (numbers[n].innerText);
+        }
+        else {
+            finalNum.textContent += (numbers[n].innerText);
+        }
+
+    }
 }
 
-clearbtn.onclick = function() {
-    for (var i = 0; i < sliders.length; i++)
-    {
+
+submitbtn.onclick = function () {
+    if (numbers[0].textContent != "") {
+        modal.style.display = "block";
+    }
+}
+closebtn.onclick = function () {
+    modal.style.display = "none";
+    for (var i = 0; i < sliders.length; i++) {
         rangeFills[i].style.width = 0;
         values[i].textContent = 0;
         sliders[i].value = 0;
         numbers[i].textContent = "";
     }
-  }
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+clearbtn.onclick = function () {
+    for (var i = 0; i < sliders.length; i++) {
+        rangeFills[i].style.width = 0;
+        values[i].textContent = 0;
+        sliders[i].value = 0;
+        numbers[i].textContent = "";
+    }
+}
